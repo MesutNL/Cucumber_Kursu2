@@ -7,6 +7,7 @@ import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.apache.commons.lang3.RandomStringUtils;
 
 public class _02_CountryStep {
     DialogContent dc=new DialogContent();
@@ -21,10 +22,12 @@ public class _02_CountryStep {
 
     @When("^Create a country$")
     public void createACountry() {
+        String randomGenName= RandomStringUtils.randomAlphabetic(8);
+        String randomGenCode=RandomStringUtils.randomAlphabetic(4);
         DialogContent dc=new DialogContent();
         dc.findAndClick("addButton");
-        dc.findAndSend("name","Asistan972");
-        dc.findAndSend("code","111111111");
+        dc.findAndSend("name",randomGenName);
+        dc.findAndSend("code",randomGenCode);
         dc.findAndClick("save");
         Parent.delay(2);
 
