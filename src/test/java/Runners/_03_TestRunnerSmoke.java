@@ -22,7 +22,6 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
         plugin={
             "html:target/cucumber-report",
             "json:target/cucumber.json"
-
         }
 )
 

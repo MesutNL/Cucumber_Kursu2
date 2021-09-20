@@ -5,6 +5,7 @@ import gherkin.lexer.Th;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BaseDriver {
@@ -33,7 +34,11 @@ public class BaseDriver {
             switch (threadBrowserName.get()) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
-                    threadDriver.set(new ChromeDriver());
+
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400"); //width, height
+                    threadDriver.set( new ChromeDriver(options) );
+                   // threadDriver.set(new ChromeDriver());
                     break;
 
                 case "firefox":
