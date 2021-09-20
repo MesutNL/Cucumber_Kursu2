@@ -26,7 +26,7 @@ public class _02_CountryStep {
         String randomGenCode=RandomStringUtils.randomAlphabetic(4);
         DialogContent dc=new DialogContent();
         dc.findAndClick("addButton");
-        dc.findAndSend("name",randomGenName);
+        dc.findAndSend("name",randomGenName );
         dc.findAndSend("code",randomGenCode);
         dc.findAndClick("save");
         Parent.delay(2);
@@ -54,12 +54,12 @@ public class _02_CountryStep {
     }
 
     @When("^User edit the \"([^\"]*)\" to \"([^\"]*)\"$")
-    public void userEditTheTo(String oldname, String newname) throws Throwable {
+    public void userEditTheTo(String oldname, String newname)  {
         dc.findAndEdit(oldname, newname);
     }
 
     @When("^User delete the new \"([^\"]*)\"$")
-    public void userDeleteTheNew(String newname) throws Throwable {
+    public void userDeleteTheNew(String newname) {
       dc.findAndDelete(newname);
     }
 }
