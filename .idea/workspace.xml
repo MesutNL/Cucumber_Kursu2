@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c68044a-8a6a-4ce5-a391-581b777479ef" name="Default Changelist" comment="eklemeler yapildi Create country">
+    <list default="true" id="1c68044a-8a6a-4ce5-a391-581b777479ef" name="Default Changelist" comment="Poma eklemeler yapildi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Utilities/BaseDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utilities/BaseDriver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +41,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/_JDBC/Gun2" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -205,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632158466101</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Poma eklemeler yapildi">
+      <created>1632159298727</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1632159298727</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,7 +234,8 @@
     <MESSAGE value="Jenkins" />
     <MESSAGE value="eklemeler yapildi" />
     <MESSAGE value="eklemeler yapildi Create country" />
-    <option name="LAST_COMMIT_MESSAGE" value="eklemeler yapildi Create country" />
+    <MESSAGE value="Poma eklemeler yapildi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Poma eklemeler yapildi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

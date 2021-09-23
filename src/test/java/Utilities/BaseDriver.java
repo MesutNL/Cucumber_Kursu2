@@ -35,10 +35,15 @@ public class BaseDriver {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
 
-                    ChromeOptions options = new ChromeOptions();
-                    options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400"); //width, height
-                    threadDriver.set( new ChromeDriver(options) );
-                   // threadDriver.set(new ChromeDriver());
+                    if (!runningFromIntelliJ()) {
+                        ChromeOptions options = new ChromeOptions();
+                        options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400"); //width, height
+                        threadDriver.set(new ChromeDriver(options));
+                    }
+                    else {
+                        threadDriver.set(new ChromeDriver());
+                    }
+                    System.out.println("runningFromIntelliJ() = " + runningFromIntelliJ());
                     break;
 
                 case "firefox":
@@ -63,6 +68,11 @@ public class BaseDriver {
             driver = null;
             threadDriver.set(driver);
         }
+    }
+    public static boolean runningFromIntelliJ()
+    {
+        String classPath = System.getProperty("java.class.path");
+        return classPath.contains("idea_rt.jar");
     }
 
 
